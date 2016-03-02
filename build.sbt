@@ -106,13 +106,13 @@ lazy val cliDeps = Seq(
 
 lazy val sparkDeps = Seq(
   // We don't want LOG4J.  We want Logback!  The excludeZK is to help with a conflict re Coursier plugin.
-  "org.apache.spark"     %% "spark-sql"         % "1.5.2" % "provided" excludeAll(excludeSlf4jLog4j, excludeZK),
-  "org.apache.spark"     %% "spark-streaming"   % "1.5.2" % "provided" excludeAll(excludeSlf4jLog4j, excludeZK)
+  "org.apache.spark"     %% "spark-sql"         % "1.6.0" % "provided" excludeAll(excludeSlf4jLog4j, excludeZK),
+  "org.apache.spark"     %% "spark-streaming"   % "1.6.0" % "provided" excludeAll(excludeSlf4jLog4j, excludeZK)
 )
 
 lazy val jmhDeps = Seq(
   "com.nativelibs4java"  %% "scalaxy-loops"     % "0.3.3" % "provided",
-  "org.apache.spark"     %% "spark-sql"         % "1.5.2" excludeAll(excludeSlf4jLog4j, excludeZK)
+  "org.apache.spark"     %% "spark-sql"         % "1.6.0" excludeAll(excludeSlf4jLog4j, excludeZK)
 )
 
 //////////////////////////
