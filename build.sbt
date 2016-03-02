@@ -1,5 +1,5 @@
 val mySettings = Seq(organization := "org.velvia",
-                     scalaVersion := "2.10.4",
+                     scalaVersion := "2.11.7",
                      parallelExecution in Test := false,
                      fork in Test := true,
                      resolvers ++= extraRepos,
